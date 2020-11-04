@@ -1,5 +1,3 @@
-export default creatImgItem;
-
 const creatImgItem = array => {
   return array
     .map(({ preview, original, description }) => {
@@ -18,3 +16,5 @@ const creatImgItem = array => {
     })
     .join('');
 };
+
+export default creatImgItem;

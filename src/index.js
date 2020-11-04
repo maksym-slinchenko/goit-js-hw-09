@@ -41,4 +41,3 @@ document.body.addEventListener('click', closeLightbox);
 import closeLightboxByKey from './modules/close-by-key';
 
 document.body.addEventListener('keydown', closeLightboxByKey);
-console.log(Hello);

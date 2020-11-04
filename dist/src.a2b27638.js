@@ -169,8 +169,6 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = void 0;
-var _default = creatImgItem;
-exports.default = _default;
 
 var creatImgItem = function creatImgItem(array) {
   return array.map(function (_ref) {
@@ -180,6 +178,9 @@ var creatImgItem = function creatImgItem(array) {
     return "<li class=\"gallery__item\">\n          <a\n            class=\"gallery__link\"\n            href=\"".concat(original, "\">\n            <img\n              class=\"gallery__image\"\n              src=\"").concat(preview, "\"\n              data-source=\"").concat(original, "\"\n              alt=\"").concat(description, "\"\n            />\n          </a>\n        </li>");
   }).join('');
 };
+
+var _default = creatImgItem;
+exports.default = _default;
 },{}],"src/modules/function-picture-comparator.js":[function(require,module,exports) {
 "use strict";
 
@@ -335,7 +336,6 @@ galleryEl.addEventListener('click', _displayModal.default); // Закрытие 
 document.body.addEventListener('click', _closeLightbox.default); //Дополнительное задание: Закрытие модального окна по нажатию клавиши ESC
 
 document.body.addEventListener('keydown', _closeByKey.default);
-console.log(Hello);
 },{"./modules/gallery-items":"src/modules/gallery-items.js","./modules/function-images-list-creater":"src/modules/function-images-list-creater.js","./modules/function-picture-comparator":"src/modules/function-picture-comparator.js","./modules/function-scroll-image":"src/modules/function-scroll-image.js","./modules/display-modal":"src/modules/display-modal.js","./modules/close-lightbox":"src/modules/close-lightbox.js","./modules/close-by-key":"src/modules/close-by-key.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -364,7 +364,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49667" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49660" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
